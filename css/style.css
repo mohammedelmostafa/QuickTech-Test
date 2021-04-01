@@ -1,0 +1,607 @@
+
+body {
+  letter-spacing: -.025em;
+  font-family: Neue Einstellung,Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  line-height: 1;
+}
+
+/*-- Body Reset --*/
+.Services__mainWrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 225px;
+  overflow: hidden;
+}
+
+.Services_mainHeader {
+  font-size: 6.2rem;
+  font-weight: 800;
+}
+.ServicesOnboarAnim_heroCopy {
+  animation-name: ServicesOnboardAnim;
+  animation-fill-mode: backwards;
+  animation-duration: 1.95s;
+  animation-delay: .2s;
+  animation-timing-function: cubic-bezier(.2,1,.3,1);
+}
+
+
+.Services__bodyCopy {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+.Services__bodyCopy:not(:last-child) {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.ServicesOnboardAnim_bodyCopy {
+  animation-name: ServicesOnboardAnim;
+  animation-fill-mode: backwards;
+  animation-duration: 1.95s;
+  animation-delay: .5s;
+  animation-timing-function: cubic-bezier(.2,1,.3,1);
+}
+
+a, abbr, area, article, aside, audio, b, bdo, blockquote, body, button, canvas, caption, cite, code, col, colgroup, command, datalist, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figure, form, h1, h2, h3, h4, h5, h6, head, header, hgroup, hr, html, i, iframe, img, input, ins, kbd, keygen, label, legend, li, map, mark, menu, meter, nav, noscript, object, ol, optgroup, option, output, p, param, pre, progress, q, rp, rt, ruby, samp, section, select, small, span, strong, sub, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, ul, var, video {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+
+article, aside, audio, command, datagrid, details, dialog, embed, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, video, wbr {
+  display: block;
+}
+
+.Services_copyWrapper {
+  width: 65%;
+  max-width: 840px;
+  padding-left: 12.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section{
+  display: block;
+}
+
+.scroll-content{
+  will-change: contents;
+}
+.AnimApp {
+  transition: transform 1.85s cubic-bezier(.2,1,.2,1);
+  -webkit-backface-visibility: hidden;
+}
+.AnimApp {
+  overflow: hidden;
+}
+
+.AnimApp {
+  transform-style: preserve-3d;
+}
+
+.AnimApp{
+  transition: transform 1.85 s cubic-bezier(.2,1,.2,1);
+}
+
+.color--red{
+  color: #d5333e;
+}
+
+body {
+  letter-spacing: -.025em;
+  font-family: Neue Einstellung,Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+}
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  color: #00f;
+}
+
+.servicesGrid__mainWrapper {
+  width: 90%;
+  max-width: 1300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (calc(33.33333% - 1.69vw));
+  grid-template-columns: repeat(3,calc(33.33333% - 1.69vw));
+  grid-auto-rows: 1fr;
+  grid-gap: 2.5vw;
+  padding: 20px 0 130px;
+  margin: 0 auto;
+}
+
+.servicesGrid__mainWrapper:before {
+  content: "";
+  width: 0;
+  padding-bottom: 100%;
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+.servicesGrid__item:first-child {
+  -ms-grid-row: 1;
+  grid-row: 1/1;
+  -ms-grid-column: 1;
+  grid-column: 1/1;
+}
+
+
+.servicesGrid__item {
+  position: relative;
+}
+
+.servicesGrid__item {
+  animation-name: serviceItemDisablePointerWhileOnboarding;
+  animation-duration: 1.3s;
+  animation-fill-mode: backwards;
+}
+
+.serviceItem__mainWrapper {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+.serviceItem__ballBGWrapper {
+  transform: scale3d(.5,.5,.5);
+  transition: transform .6s cubic-bezier(1,.005,.37,1.645);
+  animation-name: servicesItemHeroBallBGWrapperOnboard;
+  animation-duration: .75s;
+  animation-fill-mode: backwards;
+  animation-delay: .5s;
+}
+
+element.style{
+  background-color: rgb(255, 255, 101);
+}
+.serviceItem__ballBG {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.serviceItem__heroImg {
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  z-index: 1;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+}
+
+.serviceItem__heroImg {
+  transition-delay: .15s;
+  transition: transform .6s cubic-bezier(1,.005,.37,1),top .6s cubic-bezier(1,.005,.37,1);
+  animation-name: servicesItemHeroImgOnboard;
+  animation-duration: .75s;
+  animation-fill-mode: backwards;
+  animation-delay: .5s;
+}
+
+.serviceItem__wrapperHeader--preHover {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.serviceItem__overflowHiddenWrapper {
+  overflow: hidden;
+}
+
+.serviceItem__wrapperHeader--preHover .serviceItem__headerCopy {
+  font-weight: 800;
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+.serviceItem__wrapperHeader--preHover .serviceItem__headerCopy {
+  transition: transform .5s,opacity .5s;
+  animation-name: servicesItemTextOnboard;
+  animation-duration: .75s;
+  animation-fill-mode: backwards;
+  animation-delay: .5s;
+}
+.serviceItem__wrapperSubHeader--preHover {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.serviceItem__wrapperSubHeader--preHover .serviceItem__subHeaderCopy {
+  text-align: center;
+}
+
+.serviceItem__wrapperSubHeader--preHover .serviceItem__subHeaderCopy {
+  transition: transform .5s,opacity .5s;
+  animation-name: servicesItemTextOnboard;
+  animation-duration: .75s;
+  animation-fill-mode: backwards;
+  animation-delay: .5s;
+}
+
+
+.serviceItem__bodyContentWrapper {
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%,-50%);
+  width: 75%;
+}
+
+.serviceItem__wrapperHeader--postHover {
+  margin-bottom: 10px;
+}
+
+
+.serviceItem__wrapperSubHeader--postHover {
+  margin-bottom: 15px;
+}
+
+.serviceItem__wrapperHeader--postHover .serviceItem__headerCopy {
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.serviceItem__wrapperHeader--postHover .serviceItem__headerCopy {
+  transition: transform .5s,opacity .5s;
+  transition-delay: 0s;
+  transform: translate3d(0,3rem,0);
+  opacity: 0;
+  animation-name: servicesItemHideTransitionOnLoad;
+  animation-duration: .75s;
+  animation-fill-mode: backwards;
+}
+
+.serviceItem__wrapperSubHeader--postHover .serviceItem__subHeaderCopy {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+  text-align: center;
+}
+
+.serviceItem__wrapperSubHeader--postHover .serviceItem__subHeaderCopy {
+  transition: transform .5s,opacity .5s;
+  transition-delay: 0s;
+  transform: translate3d(0,3rem,0);
+}
+
+.serviceItem__bodyCopy {
+  text-align: center;
+  line-height: 2.6rem;
+  font-size: 1.4rem;
+}
+
+.serviceItem__bodyCopy, .serviceItem__wrapperSubHeader--postHover .serviceItem__subHeaderCopy {
+  opacity: 0;
+  animation-name: servicesItemHideTransitionOnLoad;
+  animation-duration: .75s;
+  animation-fill-mode: backwards;
+}
+
+.serviceItem__bodyCopy {
+  transition: opacity .5s;
+  transition-delay: 0;
+}
+
+/*============= Animation =============*/
+
+@keyframes ServicesOnboardAnim
+{
+  0% {
+    transform: translate3d(0,70px,0);
+    opacity: 0;
+}
+100% {
+    transform: translateZ(0);
+    opacity: 1;
+}
+}
+
+@keyframes serviceItemDisablePointerWhileOnboarding
+{
+  0%, 99% {
+    pointer-events: none;
+  }
+
+  100%{
+      pointer-events: auto;
+  }
+
+}
+
+@keyframes servicesItemHeroBallBGWrapperOnboard
+{
+  0% {
+    transform: scale3d(0,0,0);
+    }
+  
+   100%{
+    transform: scale3d(.5,.5,.5);}
+
+}
+
+@keyframes servicesItemHeroImgOnboard
+{
+  0% {
+    transform: scale(0) translate3d(-50%,-50%,0);
+    transform-origin: top left;
+}
+
+ 100% {
+    transform: scale(1) translate3d(-50%,-50%,0);
+    transform-origin: top left;
+}
+
+}
+
+
+@keyframes servicesItemTextOnboard
+{
+  0% {
+    transform: scale3d(0,0,0);
+}
+100% {
+    transform: scaleX(1);
+}
+
+}
+
+@keyframes servicesItemHideTransitionOnLoad
+{
+  0% {
+    opacity: 0;
+    transform: scale3d(0,0,0) translate3d(-50%,-50%,0);
+}
+
+}
+
+
+
+/*============= NAVIGATION =============*/
+
+
+
+
+/*============= FOOTER =============*/
+.footer {
+  padding: 100px 0 50px;
+  position: relative;
+  background-color: #fafafa;
+  z-index: 10;
+}
+
+.extraBold--36 {
+  font-weight: 800;
+  font-size: 3.6rem;
+}
+
+.footer__header {
+  text-align: center;
+  color: #d5333e;
+  margin-bottom: 75px;
+  display: block;
+}
+
+.trusts__mainWrapper {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto 85px;
+  display: table;
+}
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.trusts__itemWrapper:not(:last-child) {
+  border-right: 1px solid rgba(0,0,0,.1);
+  width: calc(25% - 1px);
+}
+
+.trusts__itemWrapper {
+  width: 25%;
+  height: 100px;
+  float: left;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+.trusts__itemWrapper--centraliser {
+  display: table;
+  margin: 0 auto;
+}
+
+
+.trusts__header {
+  transition: all .8s cubic-bezier(.2,.6,.4,1);
+}
+
+.trusts__header {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.extraBold--26 {
+  font-weight: 800;
+  font-size: 2.6rem;
+}
+
+.trusts__header.w--arrow:after {
+  content: "";
+  width: 15px;
+  height: 9px;
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-top: 7px;
+  margin-left: 20px;
+  background-image: url(https://www.codigo.co/img/icons/arrow-red.svg);
+  background-repeat: no-repeat;
+}
+
+.trusts__header.w--arrow:after {
+  transition: all 1.25s cubic-bezier(.2,.6,.4,1);
+  left: 0;
+}
+
+
+
+.body--14 {
+  font-size: 1.4rem;
+}
+
+.social__wrapper {
+  width: 90%;
+  max-width: 220px;
+  text-align: center;
+  margin: 0 auto 30px;
+  display: table;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social__item {
+  display: table-cell;
+  width: 20%;
+  text-align: center;
+}
+
+a, a:active, a:focus, a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.text--center {
+  text-align: center;
+}
+
+.footer__contact {
+  margin-top: 15px;
+}
+/*============= SOCKET =============*/
+
+/*============= MEDIA QUERIES =============*/
+
+/* Devices under 1199px (xl) */
+@media only screen and (max-width: 980px){
+  .footer {
+    padding-top: 50px;
+}
+
+.footer__header {
+  margin-bottom: 40px;
+}
+
+.trusts__mainWrapper {
+  width: calc(100% - 40px);
+}
+
+.trusts__itemWrapper:not(:last-child) {
+  width: 100%;
+  border-right: none;
+  margin-bottom: 10px;
+}
+
+.trusts__itemWrapper {
+  width: 100%;
+  padding: 20px 0;
+  border-right: none;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.trusts__itemWrapper--centraliser {
+  width: 100%;
+  margin: initial;
+}
+
+.trusts__header {
+  width: 100%;
+}
+
+}
+
+/* Devices under 768px (md) */
+
+@media only screen and (max-width: 1050px)
+{
+  .footer {
+    padding: 70px 0 30px;
+}
+.footer__header {
+  margin-bottom: 60px;
+}
+
+.trusts__mainWrapper {
+  width: 98%;
+  margin-bottom: 65px;
+}
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
